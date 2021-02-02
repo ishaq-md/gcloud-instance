@@ -12,7 +12,7 @@ pipeline {
       
      stage('compute VM create') {
         steps {
-           sh 'gcloud compute instances delete gcloud --zone=us-central1-a'
+           sh 'gcloud compute instances create gcloud --zone=us-central1-a'
         }
      }
      
